@@ -1,0 +1,13 @@
+Too many features = overload
+Use Dense
+
+Two different types label encoding and one hot
+one hot = new feature for each category - different when using text preprocessing
+label encoder = different num value for each label
+
+When I used embedding with the location and keyword, I was taking the same thing as words and putting them into embedding - wasn't categorical because too many categories - if it went through dense it would have been treated as numbers when in fact it is words, since so many different values, it more scale like than categories - can not be encoding using one hot so it needs labeler or word-one-hot - it is not like numerical values either because it is categorical so it is much more like words
+labeler make it seem numeric bc so many different values when in reality it is categorical words, so can not use dense without it viewing it like numbers when it is more nuanced like text/categorical - can not use one hot - so best fit is natural language processing for two variables/strings
+An embedding is a relatively low-dimensional space into which you can translate high-dimensional vectors. Embeddings make it easier to do machine learning on large inputs like sparse vectors representing words. Ideally, an embedding captures some of the semantics of the input by placing semantically similar inputs close together in the embedding space. An embedding can be learned and reused across models.
+
+
+https://medium.com/@satnalikamayank12/on-learning-embeddings-for-categorical-data-using-keras-165ff2773fc9
